@@ -1,4 +1,32 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Splice Assessment Test Dashboard
+
+## Next Js Dashboard with API Integration
+
+This project is a NextJs dashboard application that fetches user data from a mock API, implements search, and pagination. It uses TypeScript for type safety, Tailwind CSS for styling, Tanstack Table for table data rendering and TanStack Query for API data management.
+
+## Features Implemented
+
+API Integration & State Management:
+
+- Data fetched from JSONPlaceholder using Axios.
+
+- State management with TanStack Query for efficient data fetching, caching, and background refetching.
+
+### UI Features:
+
+- Display a list of users with name, email, company, and phone details.
+
+- Search functionality to filter users by name.
+
+- Frontend Pagination for navigating through user data.
+
+Performance Optimizations:
+
+- Debounced search to optimize API calls.
+
+Bonus Features:
+
+- Authentication (implemented with fake credentials, token stored in cookies).
 
 ## Getting Started
 
@@ -16,21 +44,26 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Deployed on Vercel
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Technologies Used
 
-## Learn More
+- React.js: Frontend library for building user interfaces.
 
-To learn more about Next.js, take a look at the following resources:
+- Next.js: React framework.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- TypeScript: Adds static typing to JavaScript.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Tailwind CSS: Utility-first CSS framework for styling.
 
-## Deploy on Vercel
+- TanStack Query: Data fetching and caching library.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Axios: HTTP client for making API requests.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Yarn: Package manager for Node.js projects.
+
+- Cookies: Used for storing authentication tokens.
+
+- Tanstack table: Table data rendering library.
+
+- Shadcn: Component library.
